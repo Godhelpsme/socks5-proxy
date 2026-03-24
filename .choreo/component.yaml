@@ -1,11 +1,5 @@
 schemaVersion: 1.2
 endpoints:
-  - name: socks5-proxy
-    displayName: SOCKS5 Proxy
-    service:
-      port: 1080
-    type: TCP
-    networkVisibility: Project
   - name: status-dashboard
     displayName: Status Dashboard
     service:
