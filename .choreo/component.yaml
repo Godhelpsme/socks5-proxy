@@ -1,12 +1,15 @@
-apiVersion: core.choreo.dev/v1beta1
-kind: ComponentConfig
-spec:
-  inbound:
-    - name: SOCKS5 Proxy
+schemaVersion: 1.2
+endpoints:
+  - name: socks5-proxy
+    displayName: SOCKS5 Proxy
+    service:
       port: 1080
-      type: TCP
-      context: /
-    - name: Status Dashboard
+    type: TCP
+    networkVisibility: Public
+  - name: status-dashboard
+    displayName: Status Dashboard
+    service:
+      basePath: /
       port: 8080
-      type: REST
-      context: /
+    type: REST
+    networkVisibility: Public
