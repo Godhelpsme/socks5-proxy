@@ -5,7 +5,7 @@ endpoints:
     service:
       port: 1080
     type: TCP
-    networkVisibility: Public
+    networkVisibility: Project
   - name: status-dashboard
     displayName: Status Dashboard
     service:
