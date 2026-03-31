@@ -60,6 +60,11 @@ GET  /api/switch?index=N   # Switch to specific proxy
 ## Docker
 
 ```bash
+# Prebuilt image (GHCR)
+docker pull ghcr.io/godhelpsme/socks5-proxy:main
+docker run -p 1080:1080 -p 8080:8080 ghcr.io/godhelpsme/socks5-proxy:main
+
+# Or build locally
 docker build -t socks5-pool .
 docker run -p 1080:1080 -p 8080:8080 socks5-pool
 ```
